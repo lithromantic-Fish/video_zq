@@ -33,7 +33,9 @@
     <div class="video-wrap" >
 
       <div class="item-video"  v-for="(item,i) in videoList">
-        <img class="cover" :src="item.image" alt />
+        <a :href="item.link">
+          <img class="cover" :src="item.image" alt />
+        </a>
         <span class="title">简介：{{item.title}}</span>
         <span class="auth">播放量：100</span>
       </div>
